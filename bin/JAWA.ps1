@@ -1,5 +1,7 @@
 #JAWA VERSION 1.0 by QuantumWavves
 
+[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
+
 $WINVERSION=(Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ProductName
 
 function Test-Administrator  
@@ -27,7 +29,7 @@ function AOSD {
     if($WINVERSION -eq "Windows 10 Enterprise 2016 LTSB"){W10LTSB2016}
     if($WINVERSION -eq "Windows 10 Enterprise 2015 LTSB"){W10LTSB2015}
     if($WINVERSION -eq "Windows 10 Pro"){W10_11PRO}
-    if($WINVERSION -eq "Windows 10 Home"){W10_11PRO}
+    if($WINVERSION -eq "Windows 10 Home"){W10_11HOME}
 }
 
 
@@ -35,6 +37,13 @@ function AOSD {
 function W10_11PRO {
     cmd.exe /c "slmgr //B /skms s8.uk.to"
     cmd.exe /c "slmgr //B /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX"
+    cmd.exe /c "slmgr //B /ato"
+    exit
+}
+
+function W10_11HOME {
+    cmd.exe /c "slmgr //B /skms s8.uk.to"
+    cmd.exe /c "slmgr //B /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99"
     cmd.exe /c "slmgr //B /ato"
     exit
 }
