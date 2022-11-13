@@ -18,5 +18,5 @@ iwr -useb "cutt.ly/QWJAWA" | iex
 ```
 #### Issues TLS/SSL (LTSB Versions)
 ```powershell
-[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; iwr -useb "cutt.l y/QWJAWA" | iex
+[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; iwr -useb "cutt.ly/QWJAWA" | iex
 ```
