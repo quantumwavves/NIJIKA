@@ -11,6 +11,8 @@ JAWA is a script that automates windows 10/11 activation.
 | Windows 10 LTSC 2019 | ✓ |
 | Windows 10 LTSB 2016 | ✓ |
 | Windows 10 LTSB 2015 | ✓ |
+| Windows 8.1 Pro      | ✓ |
+| Windows 8 Pro        | ✓ |
 
 ### Usage
 ```powershell
