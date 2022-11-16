@@ -24,8 +24,7 @@ function AOSD {
     if($WINVERSION -eq "Windows 10 Pro"){W10_11PRO}
     if($WINVERSION -eq "Windows 10 Home"){W10_11HOME}
     if($WINVERSION -eq "Windows 8.1 Pro"){W81PRO}
-    if($WINVERSION -eq "Windows 8.1 Pro"){W81PRO}
-    if($WINVERSION -eq "Windows 8.1 Pro"){W8PRO}
+    if($WINVERSION -eq "Windows 8 Pro"){W8PRO}
 }
 function W10_11PRO {
     cmd.exe /c "slmgr //B /skms s8.uk.to"
