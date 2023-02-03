@@ -18,6 +18,10 @@ JAWA is a script that automates windows 10/11 activation.
 ```powershell
 iwr -useb "cutt.ly/QWJAWA" | iex
 ```
+### Shorter
+```powershell
+irm "cutt.ly/QWJAWA" | iex
+```
 #### Issues TLS/SSL (LTSB Versions)
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; iwr -useb "cutt.ly/QWJAWA" | iex
