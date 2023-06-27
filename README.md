@@ -2,8 +2,8 @@
 ## Just Another Windows Activator  (KMS)
 
 JAWA is a script that automates windows 10/11 activation.
-
-| Supported Versions   | ✅ |
+### Supported Versions
+| Version   | ✅ |
 |----------------------|---|
 | Windows 11 HOME/PRO  | ✓ |
 | Windows 10 HOME/PRO  | ✓ |
