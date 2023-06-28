@@ -20,20 +20,27 @@ if(-not (Test-Administrator))
 $ErrorActionPreference = "Stop";
 function options {
     Write-Host "#######################################"
+    Write-Host "#                                     #"
     Write-Host "#               JAWA 2.0              #"
     Write-Host "#     1: Set your own KMS server      #"
     Write-Host "#     2: Default (kms.digiboy.ir)     #"
+    Write-Host "#     3: Remove any KMS activation    #"
     Write-Host "#                                     #"
     Write-Host "#######################################"
     Write-Host "                                       "
-    $choise= Read-Host "Select option: "
+    $choise= Read-Host "-> Select option "
+    while ($choise -ne 1 -and $choise -ne 2 -and $choise -ne 3) {
+      Write-Host "Please select valid option"
+      $choise= Read-Host "-> Select option "
+    }    
     if($choise -eq "1"){
-        $domain= Read-Host "Put your kms server: "
-        Clear-Host
+        $domain= Read-Host "-> Put your kms server: "
         AOSD
         }
     if($choise -eq "2"){AOSD}
+    if ($choise -eq "3"){removeKms}
 }
+
 function AOSD {
     Write-Progress -Activity "Detect windows version" -Status "Step $currentStep of $totalSteps" -PercentComplete (($currentStep/$totalSteps)*100)
     if($WINVERSION -eq "Windows 10 Enterprise LTSC 2021"){W10LTSC2019_2021; $currentStep++}
@@ -135,5 +142,12 @@ function W8PRO{
     Write-Output "##########################"
     Write-Output "#  Activation Completed  #"
     Write-Output "##########################"
+}
+function removeKms {
+  cmd.exe /c "slmgr //B /upk"
+  cmd.exe /c "slmgr //B /ckms"
+    Write-Output "##################################################"
+    Write-Output "#  KMS activation has been removed successfully  #"
+    Write-Output "##################################################"
 }
 options
