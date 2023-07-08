@@ -1,7 +1,10 @@
-# JAWA
-## Just Another Windows Activator  (KMS)
+# NIJIKA
+## Nijika Is Just Interface KMS Activator (Windows)
 
-JAWA is a script that automates windows 10/11 activation.
+Nijika is a script that automates windows 10/11 activation written in powershell.
+
+<h2 align="center"><img src="https://media.tenor.com/D4YVcuT2f20AAAAC/bocchi-the-rock-nijika-ijichi.gif" width="500"></h2>
+
 ### Supported Versions
 | Version   | ✅ |
 |----------------------|---|
@@ -16,13 +19,13 @@ JAWA is a script that automates windows 10/11 activation.
 
 ### Usage
 ```powershell
-iwr -useb "cutt.ly/QWJAWA" | iex
+iwr -useb "cutt.ly/NIJIKA" | iex
 ```
 ### Shorter
 ```powershell
-irm "cutt.ly/QWJAWA" | iex
+irm "cutt.ly/NIJIKA" | iex
 ```
 #### Issues TLS/SSL (LTSB Versions)
 ```powershell
-[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; iwr -useb "cutt.ly/QWJAWA" | iex
+[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; iwr -useb "cutt.ly/NIJIKA" | iex
 ```

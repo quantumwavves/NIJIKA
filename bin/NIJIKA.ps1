@@ -1,4 +1,4 @@
-#JAWA VERSION 2.0 by QuantumWavves
+#NIJIKA VERSION 1.0 by QuantumWavves
 [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
 $WINVERSION=(Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ProductName
 $totalSteps=3
@@ -21,7 +21,7 @@ $ErrorActionPreference = "Stop";
 function options {
     Write-Host "#######################################"
     Write-Host "#                                     #"
-    Write-Host "#               JAWA 2.0              #"
+    Write-Host "#             NIJIKA 1.0              #"
     Write-Host "#     1: Set your own KMS server      #"
     Write-Host "#     2: Default (kms.digiboy.ir)     #"
     Write-Host "#     3: Remove any KMS activation    #"
