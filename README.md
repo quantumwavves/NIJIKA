@@ -3,7 +3,7 @@
 
 Nijika is a script that automates windows 10/11 activation written in powershell.
 
-<h2 align="center"><img src="https://media.tenor.com/D4YVcuT2f20AAAAC/bocchi-the-rock-nijika-ijichi.gif" width="500"></h2>
+<h2 align="center"><img src="https://wallpapercave.com/wp/wp11814657.jpg" width="600"></h2>
 
 ### Supported Versions
 | Version   | ✅ |
