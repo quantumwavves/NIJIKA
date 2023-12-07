@@ -19,11 +19,11 @@ Nijika is a script that automates windows 10/11 activation written in powershell
 
 ### Usage
 ```powershell
-iwr -useb "cutt.ly/NIJIKA" | iex
+iwr -useb "cutt.ly/nijika" | iex
 ```
 ### Shorter
 ```powershell
-irm "cutt.ly/NIJIKA" | iex
+irm cutt.ly/nijika | iex
 ```
 #### Issues TLS/SSL (LTSB Versions)
 ```powershell
